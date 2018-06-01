@@ -8,7 +8,7 @@ function preload(){
 }
 
 function setup(){
-    canvas = createCanvas(800, 1000);
+    canvas = createCanvas(900, 675);
     canvas.parent('canvas-container');
 }
 
