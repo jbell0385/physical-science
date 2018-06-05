@@ -2,6 +2,7 @@
 var canvas;
 var labImage;
 var modalActive = false;
+var modalDeactivated = false;
 
 var equip = [
     {name:'bunsen-burner', xl:5, xr:100, yt:4, yb:172},
@@ -66,22 +67,25 @@ function draw(){
 
 function mouseClicked(){
 
-    if(!modalActive){
-        equip.forEach((item)=>{
-            if(mouseX>item.xl && mouseX<item.xr && mouseY>item.yt && mouseY<item.yb){            
-                activateModal(item.name);
-            }
-        })
+    if(!modalDeactivated){
+        if(!modalActive){
+            equip.forEach((item)=>{
+                if(mouseX>item.xl && mouseX<item.xr && mouseY>item.yt && mouseY<item.yb){            
+                    activateModal(item.name);
+                }
+            })
+        }       
     }else{
-        modalActive = false;
+        modalDeactivated = false;
     }
 }
 
 function activateModal(item){
+    modalActive = true;
     $("#"+item).modal('toggle');
 }
 
-function deactivateModal(){
-    modalActive = true;
-    console.log(modalActive);
-}
+$('.modal').on('hide.bs.modal',function(e){
+    modalActive = false;
+    modalDeactivated = true;
+})
