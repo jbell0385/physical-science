@@ -5,9 +5,37 @@
     <title>
         Physical Science Vertical Slice
     </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/emspmg/style/custom-style.css" />
+    
+    <style>
+        .sidebar-menu{
+            position:fixed!important;
+            top:0%;
+            right:0px;
+            list-style-type:none;
+            border-top-left-radius:0px!important;
+            border-bottom-right-radius: 0px!important;
+            border-top-right-radius: 0px!important;
+            border-right: none!important;
+            max-width:300px;
+            color:#373d3f;
+            box-shadow: 5px 5px 5px #373d3f;
+            font-size:0.9em;
+        }
+        .sidebar-menu .card-body{
+            padding:20px 10px 10px 15px;
+        }
 
+        .sidebar-hamburger{
+            position:fixed;
+            display:none;
+            top:5px;
+            right:5px;
+        }
+    </style>
 
 </head>
 
@@ -39,7 +67,7 @@
     =            Objectives Snippet            =
     =========================================-->
         <div class="card">
-            <div class="card-header panel-heading-lt">
+            <div class="card-header panel-heading-lt" id="">
                 <i class="fa fa-bullseye card-header-icon"></i> Objectives
             </div>
             <div class="card-body">
@@ -49,15 +77,12 @@
                     <ol>
                         <li>
                             I can properly measure mass by using a triple beam balance.
-
                         </li>
                         <li>
                             I can properly measure volume by using a graduated cylinder.
-
                         </li>
                         <li>
                             I can properly measure temperature by using a thermometer.
-
                         </li>
                     </ol>
                 </div>
@@ -77,37 +102,37 @@
                         <!--To add more list items, copy and paste one below. You must change the data target -->
                         <li>
                             <a href="#" data-toggle="modal" data-target="#length">
-                            Length
+                                Length
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#temperature">
-                            Temperature
+                                Temperature
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#mass">
-                            Mass
+                                Mass
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#w_m">
-                            Weight Vs. Mass
+                                Weight Vs. Mass
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#time">
-                            Time
+                                Time
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#d_u">
-                            Derived Units
+                                Derived Units
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#kelvin">
-                            Kelvin
+                                Kelvin
                             </a>
                         </li>
                     </ol>
@@ -121,8 +146,9 @@
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Length
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
@@ -136,8 +162,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -145,19 +171,24 @@
                 <!-- End of Length-->
                 <!-- Temperature -->
                 <!--You must change the id below to match the data-target above -->
-                <div class="modal fade" id="temperature" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
+                <div class="modal fade" id="temperature" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale
+                    is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Temperature
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
-                                <p>When the weather outside is 78 degrees fahrenheit you can identify about how it feels outside. This is because we use the fahrenheit scale in everyday life. There are also two other scales we use often in science. The Celsius and the Kelvin scale. Other countries use the Celsius scale daily like we use the Fahrenheit. </p>
+                                <p>When the weather outside is 78 degrees fahrenheit you can identify about how it feels outside.
+                                    This is because we use the fahrenheit scale in everyday life. There are also two other
+                                    scales we use often in science. The Celsius and the Kelvin scale. Other countries use
+                                    the Celsius scale daily like we use the Fahrenheit. </p>
                                 <p>The Kelvin scale is different, we use the Kelvin (K) in the laboratory only.
                                 </p>
                                 <div class="image-responsive d-flex justify-content-center align-items-center">
@@ -168,8 +199,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -177,15 +208,17 @@
                 <!-- End of Temperature-->
                 <!-- Mass -->
                 <!--You must change the id below to match the data-target above -->
-                <div class="modal fade" id="mass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
+                <div class="modal fade" id="mass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different,
+                    we use the Kelvin (K) in the laboratory only. aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Mass (Use a Triple Beam Balance)
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
@@ -200,8 +233,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -209,26 +242,30 @@
                 <!-- End of Mass-->
                 <!-- Weight Vs. Mass -->
                 <!--You must change the id below to match the data-target above -->
-                <div class="modal fade" id="w_m" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
+                <div class="modal fade" id="w_m" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different,
+                    we use the Kelvin (K) in the laboratory only. aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Weight versus Mass
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
-                                <p>Did you know you would have the same mass on Earth as on Mars? The amount of you would be identical. Look up the gravity on Earth. Now look up the gravity on Mars.
+                                <p>Did you know you would have the same mass on Earth as on Mars? The amount of you would be
+                                    identical. Look up the gravity on Earth. Now look up the gravity on Mars.
                                 </p>
                                 <p>Now look up the gravity on Mars.
                                 </p>
                                 <p>Weight is mass with the force of gravity acting on it.
 
                                 </p>
-                                <p>If you mass stays the same at each location, how would the force of gravity at each location affect your Weight?
+                                <p>If you mass stays the same at each location, how would the force of gravity at each location
+                                    affect your Weight?
                                 </p>
 
                                 <div class="image-responsive d-flex justify-content-center align-items-center">
@@ -239,8 +276,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -248,21 +285,25 @@
                 <!-- End of Weight Vs. Mass-->
                 <!-- Time -->
                 <!--You must change the id below to match the data-target above -->
-                <div class="modal fade" id="time" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
+                <div class="modal fade" id="time" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different,
+                    we use the Kelvin (K) in the laboratory only. aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Time
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
-                                <p> Time is also used in the scientific world as an important measurement tool. We can time reactions, How long something boils, and more.
+                                <p> Time is also used in the scientific world as an important measurement tool. We can time reactions,
+                                    How long something boils, and more.
                                 </p>
-                                <p>Look at the diagram below, Using time we can find out how long it takes for different objects to fall from a given height.
+                                <p>Look at the diagram below, Using time we can find out how long it takes for different objects
+                                    to fall from a given height.
                                 </p>
 
                                 <div class="image-responsive d-flex justify-content-center align-items-center">
@@ -273,8 +314,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -282,29 +323,31 @@
                 <!-- End of Time-->
                 <!-- Derived Units -->
                 <!--You must change the id below to match the data-target above -->
-                <div class="modal fade" id="d_u" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
+                <div class="modal fade" id="d_u" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different,
+                    we use the Kelvin (K) in the laboratory only. aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Derived Units
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
-                                <p>Derived Units are units that are made up from two or more combined System International (SI) units (meters,kilograms, seconds, and so on...)
+                                <p>Derived Units are units that are made up from two or more combined System International (SI)
+                                    units (meters,kilograms, seconds, and so on...)
                                 </p>
                                 <p>Please refer to the Derived Unit section of the below table.</p>
 
                                 <table class="table table-bordered">
-                                    <thead class="thead thead-dark">
+                                    <thead class="thead-dark">
                                         <tr>
                                             <th scope="col">Quantity</th>
                                             <th scope="col">Definition</th>
                                             <th scope="col">Derived Unit (Name)</th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -357,8 +400,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -366,19 +409,25 @@
                 <!-- End of Derived Units-->
                 <!-- Kelvin -->
                 <!--You must change the id below to match the data-target above -->
-                <div class="modal fade" id="kelvin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different, we use the Kelvin (K) in the laboratory only. aria-hidden="true">
+                <div class="modal fade" id="kelvin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" The Kelvin scale is different,
+                    we use the Kelvin (K) in the laboratory only. aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">
                                     Prior Knowledge for Kelvin
                                 </h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </a>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
                             </div>
                             <!--This is where you insert content for the modal -->
                             <div class="modal-body">
-                                <p>The <b>kelvin</b> (symbol: <b>K</b>) is the SI unit of temperature, and is one of the seven SI base units. It is defined as the fraction 1/273.16 of the thermodynamic (absolute) temperature of the triple point of water.
+                                <p>The
+                                    <b>kelvin</b> (symbol:
+                                    <b>K</b>) is the SI unit of temperature, and is one of the seven SI base units. It is defined
+                                    as the fraction 1/273.16 of the thermodynamic (absolute) temperature of the triple point
+                                    of water.
                                 </p>
 
 
@@ -390,8 +439,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                                        Close
-                                    </a>
+                                    Close
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -400,7 +449,7 @@
 
 
 
-
+                <div data-waypoint="waypoint0" data-wpnum="0"></div>
             </div>
         </div>
         <!--====  End of Prior Knowledge Snippet  ====-->
@@ -408,7 +457,7 @@
     =          Concept # Block Snippet         =
     =========================================-->
         <div class="card">
-            <div class="card-header panel-heading">
+            <div class="card-header panel-heading concept">
                 <i class="fa fa-book card-header-icon" aria-hidden="true"></i>1. Scientific Tools and Measurement
             </div>
             <div class="card-body">
@@ -416,36 +465,42 @@
                     <nav>
                         <div class="nav nav-tabs" id="" role="tablist">
                             <!-- Add navigation tabs here. Make sure to give it a unique ID and the href matches the id below-->
-                            <a class="nav-item nav-link active" id="instruction0101" data-toggle="tab" href="#instruction-0101" role="tab" aria-controls="tab-0X01" aria-selected="true">
+                            <a class="nav-item nav-link active" id="instruction0101" data-toggle="tab" href="#instruction-0101" role="tab" aria-controls="tab-0X01"
+                                aria-selected="true">
                                 Instruction
                             </a>
-                            <a class="nav-item nav-link" id="vocabulary0102" data-toggle="tab" href="#vocabulary-0102" role="tab" aria-controls="tab-0X02" aria-selected="false">
+                            <a class="nav-item nav-link" id="vocabulary0102" data-toggle="tab" href="#vocabulary-0102" role="tab" aria-controls="tab-0X02"
+                                aria-selected="false">
                                 Vocabulary
                             </a>
-                            <a class="nav-item nav-link" id="equipment0103" data-toggle="tab" href="#equipment-0103" role="tab" aria-controls="tab-0X03" aria-selected="false">
+                            <a class="nav-item nav-link" id="equipment0103" data-toggle="tab" href="#equipment-0103" role="tab" aria-controls="tab-0X03"
+                                aria-selected="false">
                                 Lab Equipment
                             </a>
                             <a class="nav-item nav-link" id="video0104" data-toggle="tab" href="#video-0104" role="tab" aria-controls="tab-0X03" aria-selected="false">
                                 Video
                             </a>
-                            <a class="nav-item nav-link" id="selfcheck0105" data-toggle="tab" href="#selfcheck-0105" role="tab" aria-controls="tab-0X03" aria-selected="false">
+                            <a class="nav-item nav-link" id="selfcheck0105" data-toggle="tab" href="#selfcheck-0105" role="tab" aria-controls="tab-0X03"
+                                aria-selected="false">
                                 Self-Check
                             </a>
                         </div>
                     </nav>
-                    <div class="tab-content" id="">
+                    <div class="tab-content">
                         <!-- Make sure all id's match the href's above -->
                         <!--Tab 1-->
                         <div class="tab-pane fade show active" id="instruction-0101" role="tabpanel" aria-labelledby="tab01-tab">
                             <h4>Tools of Measurement</h4>
-                            <p>The scientific tools we will be learning about in this lesson are some of the tools you will be using during your actual labs.</p>
-                            <p>Quantitative observation is made using numbers and measurements. In this lesson, we will go over various tools that allow us to measure, collect and analyze data used in scientific experiments.</p>
+                            <p>The scientific tools we will be learning about in this lesson are some of the tools you will
+                                be using during your actual labs.</p>
+                            <p>Quantitative observation is made using numbers and measurements. In this lesson, we will go over
+                                various tools that allow us to measure, collect and analyze data used in scientific experiments.</p>
                             <div class="image-responsive d-flex justify-content-center align-items-center my-4">
                                 <!--Swap out image here-->
                                 <img class="img-800" src="https://storage.googleapis.com/emspmg/Science/physical-science/i0101.png" alt="A chart explaning the metric system. Scientists measure Volume in liters using a Graduated Cylinder, mass in grams using a triple beam balance, length in meters using a ruler or measuring tape, temperature in Kelvin using a thermometer and time in seconds, using a stopwatch or clock.">
                             </div>
                             <table class="table table-bordered">
-                                <thead class="thead-dark" >
+                                <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">Measurement</th>
                                         <th scope="col">SI Unit</th>
@@ -523,7 +578,8 @@
                                                     <div class="card">
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">Measurement</h4>
-                                                            <p class="card-text">The act or process of measuring something. A size, length, or amount known by measuring something.
+                                                            <p class="card-text">The act or process of measuring something. A size, length, or
+                                                                amount known by measuring something.
                                                             </p>
 
                                                         </div>
@@ -549,7 +605,8 @@
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">Unit</h4>
                                                             <div class="card-text text-left">
-                                                                <p>particular amount of length, time, money, etc., that is used as a standard for counting or measuring</p>
+                                                                <p>particular amount of length, time, money, etc., that is used
+                                                                    as a standard for counting or measuring</p>
                                                                 <ul>
                                                                     <li>Feet and meters are
                                                                         <i>units</i> of length.</li>
@@ -581,7 +638,8 @@
                                                     <div class="card">
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">Volume</h4>
-                                                            <p class="card-text">The amount of space, measured in cubic units, that an object or substance occupies. The box has a
+                                                            <p class="card-text">The amount of space, measured in cubic units, that an object
+                                                                or substance occupies. The box has a
                                                                 <i>volume</i> of three cubic meters.
                                                             </p>
 
@@ -630,7 +688,11 @@
                                                     <div class="card">
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">English System</h4>
-                                                            <p class="card-text">The English system of measures is a collection of measures for length, volume, weight, area, etc. that have their roots in hundreds of years of history. They were standardized somewhat by the British Weights and Measures Act of 1824, which defined the Imperial Units to be used throughout the British Empire.
+                                                            <p class="card-text">The English system of measures is a collection of measures for
+                                                                length, volume, weight, area, etc. that have their roots
+                                                                in hundreds of years of history. They were standardized somewhat
+                                                                by the British Weights and Measures Act of 1824, which defined
+                                                                the Imperial Units to be used throughout the British Empire.
 
                                                             </p>
                                                         </div>
@@ -655,7 +717,9 @@
                                                     <div class="card">
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">SI System</h4>
-                                                            <p class="card-text">The International System of Units (SI, abbreviated from the French Système international (d'unités)) is the modern form of the metric system, and is the most widely used system of measurement.</p>
+                                                            <p class="card-text">The International System of Units (SI, abbreviated from the French
+                                                                Système international (d'unités)) is the modern form of the
+                                                                metric system, and is the most widely used system of measurement.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -685,7 +749,8 @@
                                                         <div class="card">
                                                             <div class="card-body text-center">
                                                                 <h4 class="card-title">Metric System</h4>
-                                                                <p class="card-text">The decimal measuring system based on the meter, liter, and gram as units of length, capacity, and weight or mass.
+                                                                <p class="card-text">The decimal measuring system based on the meter, liter, and
+                                                                    gram as units of length, capacity, and weight or mass.
                                                                 </p>
 
                                                             </div>
@@ -711,7 +776,10 @@
                                                             <div class="card-body text-center">
                                                                 <h4 class="card-title">Liter</h4>
                                                                 <div class="card-text text-left">
-                                                                    <p>a metric unit of capacity, formerly defined as the volume of 1 kilogram of water under standard conditions, now equal to 1,000 cubic centimeters (about 1.75 pints).</p>
+                                                                    <p>a metric unit of capacity, formerly defined as the volume
+                                                                        of 1 kilogram of water under standard conditions,
+                                                                        now equal to 1,000 cubic centimeters (about 1.75
+                                                                        pints).</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -735,7 +803,8 @@
                                                         <div class="card">
                                                             <div class="card-body text-center">
                                                                 <h4 class="card-title">Gallon</h4>
-                                                                <p class="card-text">a unit of volume for liquid measure equal to four quarts, in particular.
+                                                                <p class="card-text">a unit of volume for liquid measure equal to four quarts,
+                                                                    in particular.
                                                                 </p>
 
                                                             </div>
@@ -760,7 +829,8 @@
                                                         <div class="card">
                                                             <div class="card-body text-center">
                                                                 <h4 class="card-title">Kilogram</h4>
-                                                                <p class="card-text">the SI unit of mass, equivalent to the international standard kept at Sèvres near Paris (approximately 2.205 lb).</p>
+                                                                <p class="card-text">the SI unit of mass, equivalent to the international standard
+                                                                    kept at Sèvres near Paris (approximately 2.205 lb).</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -807,7 +877,10 @@
                                                         <div class="card">
                                                             <div class="card-body text-center">
                                                                 <h4 class="card-title">Pound</h4>
-                                                                <p class="card-text">any of various units of mass and weight; specifically : a unit now in general use among English-speaking peoples equal to 16 avoirdupois ounces or 7000 grains or 0.4536 kilogram
+                                                                <p class="card-text">any of various units of mass and weight; specifically : a
+                                                                    unit now in general use among English-speaking peoples
+                                                                    equal to 16 avoirdupois ounces or 7000 grains or 0.4536
+                                                                    kilogram
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -825,23 +898,25 @@
                         </div>
                         <!--Tab 3-->
                         <div class="tab-pane fade" id="equipment-0103" role="tabpanel" aria-labelledby="tab03-tab">
-                            <h3>Science Lab Equipment</h3>
-                            <p>The following are some common science lab equipment.</p>
-                            <ul>
-                                <li>To be broken up into separate images, with definition popups integrated.</li>
-                                <li>Drag and Drop/Matching activity to be developed.</li>
-                            </ul>
-                            <div class="image-responsive d-flex justify-content-center align-items-center">
-                                <!--Swap out image here-->
-                                <img class="img-600" src="https://storage.googleapis.com/emspmg/Vertical-Slice/Scientific_Instruments_large.gif" alt="group of scientific lab instruments.">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Science Lab Equipment</h3>
+                                    <div class="embed-responsive embed-responsive-4by3" style="max-width:900px;">
+                                        <iframe class="embed-responsive-item" src="https://dry-scrubland-48502.herokuapp.com/"></iframe>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <div class="tab-pane fade" id="video-0104" role="tabpanel" aria-labelledby="tab04-tab">
                             <h4>Measurement and Lab Equipment Video</h4>
-                            <p>The scientific tools we will be learning about in this lesson are some of the tools you will be using during your actual labs. During this video, observe the name and image of each tool so that you will learn which tool or equipment to use for measurement.
+                            <p>The scientific tools we will be learning about in this lesson are some of the tools you will
+                                be using during your actual labs. During this video, observe the name and image of each tool
+                                so that you will learn which tool or equipment to use for measurement.
                             </p>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_A3JxpMU63s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_A3JxpMU63s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="selfcheck-0105" role="tabpanel" aria-labelledby="tab05-tab">
@@ -857,8 +932,9 @@
         <!--========================================
         =          Concept # 2 Block Snippet       =
         =========================================-->
+        <div data-waypoint="waypoint1" data-wpnum="1"></div>
         <div class="card">
-            <div class="card-header panel-heading">
+            <div class="card-header panel-heading concept">
                 <i class="fa fa-book card-header-icon" aria-hidden="true"></i>2. Triple Beam Balance - Mass
             </div>
             <div class="card-body">
@@ -866,18 +942,21 @@
                     <nav>
                         <div class="nav nav-tabs" id="" role="tablist">
                             <!-- Add navigation tabs here. Make sure to give it a unique ID and the href matches the id below-->
-                            <a class="nav-item nav-link active" id="instruction0201" data-toggle="tab" href="#instruction-0201" role="tab" aria-controls="tab-0X01" aria-selected="true">
-                            Instruction
-                        </a>
-                            <a class="nav-item nav-link" id="vocabulary0202" data-toggle="tab" href="#vocabulary-0202" role="tab" aria-controls="tab-0X02" aria-selected="false">
-                            Vocabulary
-                        </a>
+                            <a class="nav-item nav-link active" id="instruction0201" data-toggle="tab" href="#instruction-0201" role="tab" aria-controls="tab-0X01"
+                                aria-selected="true">
+                                Instruction
+                            </a>
+                            <a class="nav-item nav-link" id="vocabulary0202" data-toggle="tab" href="#vocabulary-0202" role="tab" aria-controls="tab-0X02"
+                                aria-selected="false">
+                                Vocabulary
+                            </a>
                             <a class="nav-item nav-link" id="video0203" data-toggle="tab" href="#video-0203" role="tab" aria-controls="tab-0X03" aria-selected="false">
-                            Video
-                        </a>
-                            <a class="nav-item nav-link" id="selfcheck0204" data-toggle="tab" href="#selfcheck-0204" role="tab" aria-controls="tab-0X03" aria-selected="false">
-                            Self-Check
-                        </a>
+                                Video
+                            </a>
+                            <a class="nav-item nav-link" id="selfcheck0204" data-toggle="tab" href="#selfcheck-0204" role="tab" aria-controls="tab-0X03"
+                                aria-selected="false">
+                                Self-Check
+                            </a>
                         </div>
                     </nav>
                     <div class="tab-content" id="">
@@ -913,11 +992,12 @@
                                     <strong>You measure mass using a triple beam balance (TBB).</strong>
                                     <ol>
                                         <li>The unit is grams.</li>
-                                        <li>It has grooves for riders to sit in at each labeled mass. Do not put riders between grooves.
+                                        <li>It has grooves for riders to sit in at each labeled mass. Do not put riders between
+                                            grooves.
                                         </li>
                                     </ol>
                                 </div>
-                                
+
                                 <div class="col">
                                     <div class="image-responsive d-flex justify-content-center align-items-center">
                                         <!--Swap out image here-->
@@ -928,7 +1008,7 @@
                             <hr style="width:50%">
                             <div class="image-responsive d-flex justify-content-center align-items-center">
                                 <!--Swap out image here-->
-                                <img class="img-800" src="https://storage.googleapis.com/emspmg/Vertical-Slice/i0203.png" alt="See alternate version.">
+                                <img class="img-800" src="https://storage.googleapis.com/emspmg/Science/physical-science/i0203.png" alt="See alternate version.">
                             </div>
                             <hr style="width:50%">
                             <div class="row">
@@ -942,14 +1022,15 @@
                                         </li>
                                         <li>Place object on tray.
                                         </li>
-                                        <li>Start with the largest rider. Slide the rider to the right into each groove until the pointer hits the bottom, then slide the rider back on groove.
+                                        <li>Start with the largest rider. Slide the rider to the right into each groove until
+                                            the pointer hits the bottom, then slide the rider back on groove.
                                         </li>
                                         <li>Repeat for the next largest rider until you finish all three riders.
                                         </li>
                                         <li>The pointer should be pointing at zero with all 3 riders in position.
                                         </li>
                                         <li>Add the mass shown on each beam to get the total mass of the object.</li>
-        
+
                                     </ol>
                                 </div>
                                 <div class="col-md-7">
@@ -962,15 +1043,9 @@
                         </div>
                         <!--Tab 2-->
                         <div class="tab-pane fade" id="vocabulary-0202" role="tabpanel" aria-labelledby="tab02-tab">
-                            <h4>Triple Beam Balance Vocabulary</h4>
-                            <ol>
-                                <li>Measurement</li>
-                                <li>Mass</li>
-                                <li>Grams</li>
-                            </ol>
                             <!-- Vocabulary Cards -->
                             <div id="" class="pb-5 ems-glossary-cards">
-                                <h4 class="">Triple Beam Balance Flash Cards</h4>
+                                <h4 class="card-h4">Triple Beam Balance Vocabulary</h4>
                                 <div class="row">
                                     <!-- Def 1 -->
                                     <div class="col-sm-12 col-md-6 col-lg-4 glossary-card-container">
@@ -986,8 +1061,9 @@
                                                 <div class="backside">
                                                     <div class="card">
                                                         <div class="card-body text-center">
-                                                            <h4 class="card-title">Definition</h4>
-                                                            <p class="card-text">The act or process of measuring something. A size, length, or amount known by measuring something.
+                                                            <h4 class="card-title">Measurement</h4>
+                                                            <p class="card-text">The act or process of measuring something. A size, length, or
+                                                                amount known by measuring something.
                                                             </p>
 
                                                         </div>
@@ -1011,10 +1087,9 @@
                                                 <div class="backside">
                                                     <div class="card">
                                                         <div class="card-body text-center">
-                                                            <h4 class="card-title">Definition</h4>
+                                                            <h4 class="card-title">Mass</h4>
                                                             <div class="card-text text-left">
                                                                 <p>Often defined as the amount of matter in an object.</p>
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1036,9 +1111,9 @@
                                                 </div>
                                                 <div class="backside">
                                                     <div class="card">
-                                                        <div class="carda metric unit of mass equal to one thousandth of a kilogram.-body text-center">
-                                                            <h4 class="card-title">Definition</h4>
-                                                            <p class="card-text">A metric unit of mass equal to one thousandth of a kilogram.</p>
+                                                        <div class="card-body text-center">
+                                                            <h4 class="card-title">Grams</h4>
+                                                            <p class="card-text text-left">A metric unit of mass equal to one thousandth of a kilogram.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1056,7 +1131,8 @@
                         <div class="tab-pane fade" id="video-0203" role="tabpanel" aria-labelledby="tab03-tab">
                             <h4>How to Use a Triple Beam Balance:</h4>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Q5G_HVZ8XI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Q5G_HVZ8XI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="selfcheck-0204" role="tabpanel" aria-labelledby="tab03-tab">
@@ -1071,8 +1147,8 @@
                                     <!--Change the "data-target" below to match the id of the modal used for this button -->
                                     <div class="grid-answer mt-2">
                                         <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#selfcheck1-modal-0201">
-                Answer
-            </a>
+                                            Answer
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 image-responsive d-flex justify-content-center align-items-center">
@@ -1090,8 +1166,8 @@
                                                 Modal title
                                             </h5>
                                             <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </a>
+                                                <span aria-hidden="true">&times;</span>
+                                            </a>
                                         </div>
                                         <!--This is where you insert content for the modal -->
                                         <div class="modal-body">
@@ -1099,8 +1175,8 @@
                                         </div>
                                         <div class="modal-footer">
                                             <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                    Close
-                </a>
+                                                Close
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1118,8 +1194,9 @@
         <!--========================================
     =          Concept # 3 Block Snippet         =
     =========================================-->
+        <div data-waypoint="waypoint2" data-wpnum="2"></div>
         <div class="card">
-            <div class="card-header panel-heading">
+            <div class="card-header panel-heading concept">
                 <i class="fa fa-book card-header-icon" aria-hidden="true"></i>3. Graduated Cylinder - Volume
             </div>
             <div class="card-body">
@@ -1127,18 +1204,21 @@
                     <nav>
                         <div class="nav nav-tabs" id="" role="tablist">
                             <!-- Add navigation tabs here. Make sure to give it a unique ID and the href matches the id below-->
-                            <a class="nav-item nav-link active" id="instruction0301" data-toggle="tab" href="#instruction-0301" role="tab" aria-controls="tab-0X01" aria-selected="true">
-                            Instruction
-                        </a>
-                            <a class="nav-item nav-link" id="vocabulary0302" data-toggle="tab" href="#vocabulary-0302" role="tab" aria-controls="tab-0X02" aria-selected="false">
-                            Vocabulary
-                        </a>
+                            <a class="nav-item nav-link active" id="instruction0301" data-toggle="tab" href="#instruction-0301" role="tab" aria-controls="tab-0X01"
+                                aria-selected="true">
+                                Instruction
+                            </a>
+                            <a class="nav-item nav-link" id="vocabulary0302" data-toggle="tab" href="#vocabulary-0302" role="tab" aria-controls="tab-0X02"
+                                aria-selected="false">
+                                Vocabulary
+                            </a>
                             <a class="nav-item nav-link" id="video0303" data-toggle="tab" href="#video-0303" role="tab" aria-controls="tab-0X03" aria-selected="false">
-                            Video
-                        </a>
-                            <a class="nav-item nav-link" id="selfcheck0304 " data-toggle="tab" href="#selfcheck-0304" role="tab" aria-controls="tab-0X03" aria-selected="false">
-                            Self-Check
-                        </a>
+                                Video
+                            </a>
+                            <a class="nav-item nav-link" id="selfcheck0304 " data-toggle="tab" href="#selfcheck-0304" role="tab" aria-controls="tab-0X03"
+                                aria-selected="false">
+                                Self-Check
+                            </a>
                         </div>
                     </nav>
                     <div class="tab-content" id="">
@@ -1159,7 +1239,9 @@
                                 <!-- Top-Right -->
                                 <div class="col-md-6">
                                     <h4 class="grid-subtitle">Graduated Cylinder</h4>
-                                    <p>A graduated cylinder is a standard piece of laboratory glassware used to measure the volume of an object or amount of liquid. Do not use a beaker to measure the volume of a liquid.
+                                    <p>A graduated cylinder is a standard piece of laboratory glassware used to measure the
+                                        volume of an object or amount of liquid. Do not use a beaker to measure the volume
+                                        of a liquid.
                                     </p>
                                     <img class="img-600" src="https://storage.googleapis.com/emspmg/Vertical-Slice/i0302.png">
                                     <ul>
@@ -1250,7 +1332,8 @@
                                                     <div class="card">
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">Definition</h4>
-                                                            <p class="card-text">The act or process of measuring something. A size, length, or amount known by measuring something.
+                                                            <p class="card-text">The act or process of measuring something. A size, length, or
+                                                                amount known by measuring something.
                                                             </p>
 
                                                         </div>
@@ -1276,7 +1359,8 @@
                                                         <div class="card-body text-center">
                                                             <h4 class="card-title">Definition</h4>
                                                             <div class="card-text text-left">
-                                                                <p>How close a measurement is to the theoretical or accepted value.
+                                                                <p>How close a measurement is to the theoretical or accepted
+                                                                    value.
                                                                 </p>
 
                                                             </div>
@@ -1352,7 +1436,11 @@
                                                     <div class="card">
                                                         <div class="carda metric unit of mass equal to one thousandth of a kilogram.-body text-center">
                                                             <h4 class="card-title">Definition</h4>
-                                                            <p class="card-text">A measure of mass per unit of volume. The average density of an object equals its total mass divided by its total volume. An object made from a comparatively dense material (such as iron) will have less volume than an object of equal mass made from some less dense substance (such as water). </p>
+                                                            <p class="card-text">A measure of mass per unit of volume. The average density of
+                                                                an object equals its total mass divided by its total volume.
+                                                                An object made from a comparatively dense material (such
+                                                                as iron) will have less volume than an object of equal mass
+                                                                made from some less dense substance (such as water). </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1373,7 +1461,8 @@
                         <div class="tab-pane fade" id="video-0303" role="tabpanel" aria-labelledby="tab03-tab">
                             <h4>How to Read a Graduated Cylinder</h4>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgzNyJTBbH8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgzNyJTBbH8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
 
                             </div>
                         </div>
@@ -1384,13 +1473,13 @@
                                 <div class="col-md-6">
                                     <h4 class="grid-subtitle">Self-Check 3.1</h4>
                                     <p>
-                                       On the left, picture, read each graduated cylinder and take note of the amount. Be sure to include mL in your answer.
+                                        On the left, picture, read each graduated cylinder and take note of the amount. Be sure to include mL in your answer.
                                     </p>
                                     <!--Change the "data-target" below to match the id of the modal used for this button -->
                                     <div class="grid-answer mt-2">
                                         <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#selfcheck1-modal-0304">
-                Answer
-            </a>
+                                            Answer
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 image-responsive d-flex justify-content-center align-items-center">
@@ -1408,193 +1497,15 @@
                                                 Self-Check 3.1 Answer
                                             </h5>
                                             <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </a>
+                                                <span aria-hidden="true">&times;</span>
+                                            </a>
                                         </div>
-                                        A. 37mL
-                                        B. 37mL
-                                        C. 40mL
-                                        D. 65 mL
-                                        E. 2.3 mL
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                    Close
-                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of Modal 1-->
-                            <!--End Self-Check 1 -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-      
-        <!--====  End of Concept # 3 Block Snippet  ====-->
-        <!-- Copy to here    -->
-        
-         <!-- Copy from here -->
-    <!--========================================
-    =          Concept # Block Snippet         =
-    =========================================-->
-    <div class="card">
-        <div class="card-header panel-heading">
-            <i class="fa fa-book card-header-icon" aria-hidden="true"></i> 4. Thermometer - Temperature
-        </div>
-        <div class="card-body">
-            <div class="tabs-container">
-                <nav>
-                    <div class="nav nav-tabs" id="" role="tablist">
-                        <!-- Add navigation tabs here. Make sure to give it a unique ID and the href matches the id below-->
-                        <a class="nav-item nav-link active" id="instruction0401" data-toggle="tab" href="#instruction-0401" role="tab" aria-controls="tab-0X01" aria-selected="true">
-                        Instruction
-                    </a>
-                        <a class="nav-item nav-link" id="vocabulary0402" data-toggle="tab" href="#vocabulary-0402" role="tab" aria-controls="tab-0X02" aria-selected="false">
-                        Vocabulary
-                    </a>
-                        <a class="nav-item nav-link" id="video0403" data-toggle="tab" href="#video-0403" role="tab" aria-controls="tab-0X03" aria-selected="false">
-                        Video
-                    </a>
-                        <a class="nav-item nav-link" id="selfcheck0404" data-toggle="tab" href="#selfcheck-0404" role="tab" aria-controls="tab-0X03" aria-selected="false">
-                        Self-Check
-                    </a>
-                    </div>
-                </nav>
-                <div class="tab-content" id="">
-                    <!-- Make sure all id's match the href's above -->
-                    <!--Tab 1-->
-                    <div class="tab-pane fade show active" id="instruction-0401" role="tabpanel" aria-labelledby="tab01-tab">
-                        <p>Use a thermometer to measure temperature. Temperature is measured with a thermometer usually made of a glass tube with colored alcohol. As the air gets hotter, the level of the liquid rises and, as the air gets cooler, the level falls. The temperature of the air is always changing.</p>
-                    </div>
-                    <!--Tab 2-->
-                    <div class="tab-pane fade" id="vocabulary-0402" role="tabpanel" aria-labelledby="tab02-tab">
-                        <h4>Thermometer - Temperature Vocabulary</h4>
-                        <ol>
-                            <li>Fahrenheit</li>
-                            <li>Celsius</li>
-                        </ol>
-                        <!-- Vocabulary Cards -->
-                        <div id="" class="pb-5 ems-glossary-cards">
-                            <h4 class="">Thermometer Flash Cards</h4>
-                            <div class="row">
-                                <!-- Def 1 -->
-                                <div class="col-sm-12 col-md-6 col-lg-4 glossary-card-container">
-                                    <div class="image-flip">
-                                        <div class="mainflip">
-                                            <div class="frontside">
-                                                <div class="card">
-                                                    <div class="card-body text-center">
-                                                        <h4 class="card-title">Fahrenheit</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="backside">
-                                                <div class="card">
-                                                    <div class="card-body text-center">
-                                                        <h4 class="card-title">Definition</h4>
-                                                        <p class="card-text">English unit for measuring temperature.
-                                                        </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./Def 1 -->
-                                <!-- Def 2 -->
-                                <div class="col-sm-12 col-md-6 col-lg-4 glossary-card-container" onmouseover="this.style.zIndex = '10'" onmouseout="this.style.zIndex = '1'">
-                                    <div class="image-flip">
-                                        <div class="mainflip">
-                                            <div class="frontside">
-                                                <div class="card">
-                                                    <div class="card-body text-center">
-                                                        <h4 class="card-title">Celsius</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="backside">
-                                                <div class="card">
-                                                    <div class="card-body text-center">
-                                                        <h4 class="card-title">Definition</h4>
-                                                        <div class="card-text text-left">
-                                                            <p>Metric unit for measuring temperature.
-                                                            </p>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./Def 2 -->
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--Tab 3-->
-                    <div class="tab-pane fade" id="video-0403" role="tabpanel" aria-labelledby="tab03-tab">
-                        <h4>Reading a Thermometer</h4>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/saSah6kLGOc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="selfcheck-0404" role="tabpanel" aria-labelledby="tab03-tab">
-                        <!-- Self-Check 1 Grid -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4 class="grid-subtitle">Self-Check 4.1</h4>
-                                <p>
-                                    What temperature is indicated on each of the thermometers to the right?
-                                </p>
-                                <!--Change the "data-target" below to match the id of the modal used for this button -->
-                                <div class="grid-answer mt-2">
-                                    <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#selfcheck1-modal-0404">
-            Answer
-        </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 image-responsive d-flex justify-content-center align-items-center">
-                                <!--Swap out image here-->
-                                <img class="img-600" src="https://storage.googleapis.com/emspmg/Vertical-Slice/sc0401.jpg" />
-                            </div>
-                        </div>
-                        <!-- Modal 1 Target -->
-                        <!--You must change the id below to match the "data-target" above -->
-                        <div class="modal fade" id="selfcheck1-modal-0404" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content ems-modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">
-                                            Answer: Self-Check 4.1
-                                        </h5>
-                                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </a>
-                                    </div>
-                                    <!--This is where you insert content for the modal -->
-                                    <div class="modal-body">
-                                        <ol type="a">
-                                            <li>68 degrees, Celsius.</li>
-                                            <li> -3 degrees, Celsius.</li>
-                                            <li>11 degrees, Celsius.</li>
-                                            <li>-1.5 degrees, Celsius.</li>
-                                            <li>28.5 degrees, Celsius.</li>
-                                            <li>15 degrees, Celsius.</li>
-                                            <li>9 degrees, Celsius.</li>
-                                            <li>-11.5 degrees, Celsius.</li>
-                                            <li>98.3 degrees, Celsius.</li>
-                                        </ol>
+                                        A. 37mL B. 37mL C. 40mL D. 65 mL E. 2.3 mL
                                     </div>
                                     <div class="modal-footer">
                                         <a href="#" class="btn btn-secondary" data-dismiss="modal">
-                Close
-            </a>
+                                            Close
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1605,30 +1516,261 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--====  End of Concept # Block Snippet  ====-->
+
+        <!--====  End of Concept # 3 Block Snippet  ====-->
+        <!-- Copy to here    -->
+
+        <!-- Copy from here -->
+        <!--========================================
+    =          Concept # Block Snippet         =
+    =========================================-->
+        <div data-waypoint="waypoint3" data-wpnum="3"></div>
+        <div class="card">
+            <div class="card-header panel-heading concept">
+                <i class="fa fa-book card-header-icon" aria-hidden="true"></i> 4. Thermometer - Temperature
+            </div>
+            <div class="card-body">
+                <div class="tabs-container">
+                    <nav>
+                        <div class="nav nav-tabs" id="" role="tablist">
+                            <!-- Add navigation tabs here. Make sure to give it a unique ID and the href matches the id below-->
+                            <a class="nav-item nav-link active" id="instruction0401" data-toggle="tab" href="#instruction-0401" role="tab" aria-controls="tab-0X01"
+                                aria-selected="true">
+                                Instruction
+                            </a>
+                            <a class="nav-item nav-link" id="vocabulary0402" data-toggle="tab" href="#vocabulary-0402" role="tab" aria-controls="tab-0X02"
+                                aria-selected="false">
+                                Vocabulary
+                            </a>
+                            <a class="nav-item nav-link" id="video0403" data-toggle="tab" href="#video-0403" role="tab" aria-controls="tab-0X03" aria-selected="false">
+                                Video
+                            </a>
+                            <a class="nav-item nav-link" id="selfcheck0404" data-toggle="tab" href="#selfcheck-0404" role="tab" aria-controls="tab-0X03"
+                                aria-selected="false">
+                                Self-Check
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="">
+                        <!-- Make sure all id's match the href's above -->
+                        <!--Tab 1-->
+                        <div class="tab-pane fade show active" id="instruction-0401" role="tabpanel" aria-labelledby="tab01-tab">
+                            <p>Use a thermometer to measure temperature. Temperature is measured with a thermometer usually
+                                made of a glass tube with colored alcohol. As the air gets hotter, the level of the liquid
+                                rises and, as the air gets cooler, the level falls. The temperature of the air is always
+                                changing.</p>
+                        </div>
+                        <!--Tab 2-->
+                        <div class="tab-pane fade" id="vocabulary-0402" role="tabpanel" aria-labelledby="tab02-tab">
+                            <h4>Thermometer - Temperature Vocabulary</h4>
+                            <ol>
+                                <li>Fahrenheit</li>
+                                <li>Celsius</li>
+                            </ol>
+                            <!-- Vocabulary Cards -->
+                            <div id="" class="pb-5 ems-glossary-cards">
+                                <h4 class="">Thermometer Flash Cards</h4>
+                                <div class="row">
+                                    <!-- Def 1 -->
+                                    <div class="col-sm-12 col-md-6 col-lg-4 glossary-card-container">
+                                        <div class="image-flip">
+                                            <div class="mainflip">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <h4 class="card-title">Fahrenheit</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <h4 class="card-title">Definition</h4>
+                                                            <p class="card-text">English unit for measuring temperature.
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Def 1 -->
+                                    <!-- Def 2 -->
+                                    <div class="col-sm-12 col-md-6 col-lg-4 glossary-card-container" onmouseover="this.style.zIndex = '10'" onmouseout="this.style.zIndex = '1'">
+                                        <div class="image-flip">
+                                            <div class="mainflip">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <h4 class="card-title">Celsius</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <h4 class="card-title">Definition</h4>
+                                                            <div class="card-text text-left">
+                                                                <p>Metric unit for measuring temperature.
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Def 2 -->
 
 
-        <!--====  End of Start of Template  ====-->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tab 3-->
+                        <div class="tab-pane fade" id="video-0403" role="tabpanel" aria-labelledby="tab03-tab">
+                            <h4>Reading a Thermometer</h4>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/saSah6kLGOc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="selfcheck-0404" role="tabpanel" aria-labelledby="tab03-tab">
+                            <!-- Self-Check 1 Grid -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="grid-subtitle">Self-Check 4.1</h4>
+                                    <p>
+                                        What temperature is indicated on each of the thermometers to the right?
+                                    </p>
+                                    <!--Change the "data-target" below to match the id of the modal used for this button -->
+                                    <div class="grid-answer mt-2">
+                                        <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#selfcheck1-modal-0404">
+                                            Answer
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 image-responsive d-flex justify-content-center align-items-center">
+                                    <!--Swap out image here-->
+                                    <img class="img-600" src="https://storage.googleapis.com/emspmg/Vertical-Slice/sc0401.jpg" />
+                                </div>
+                            </div>
+                            <!-- Modal 1 Target -->
+                            <!--You must change the id below to match the "data-target" above -->
+                            <div class="modal fade" id="selfcheck1-modal-0404" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content ems-modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="">
+                                                Answer: Self-Check 4.1
+                                            </h5>
+                                            <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </a>
+                                        </div>
+                                        <!--This is where you insert content for the modal -->
+                                        <div class="modal-body">
+                                            <ol type="a">
+                                                <li>68 degrees, Celsius.</li>
+                                                <li> -3 degrees, Celsius.</li>
+                                                <li>11 degrees, Celsius.</li>
+                                                <li>-1.5 degrees, Celsius.</li>
+                                                <li>28.5 degrees, Celsius.</li>
+                                                <li>15 degrees, Celsius.</li>
+                                                <li>9 degrees, Celsius.</li>
+                                                <li>-11.5 degrees, Celsius.</li>
+                                                <li>98.3 degrees, Celsius.</li>
+                                            </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#" class="btn btn-secondary" data-dismiss="modal">
+                                                Close
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Modal 1-->
+                            <!--End Self-Check 1 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====  End of Concept # Block Snippet  ====-->
+
+        <div class="card sidebar-menu" style="display:none;">
+            <div class="card-body">
+            </div>
+        </div>
 
         
-        </script>
-        <script src="https://storage.googleapis.com/emspmg/style/bundle.js"></script>
-        <script>
-        $(".glossary-card-container").ready(function(){
-            $(".glossary-card-container").mouseover(function(){
-                this.style.zIndex = "100";
+
+    </div>
+    <!--====  End of Start of Template  ====-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://storage.googleapis.com/emspmg/style/bundle.js"></script>
+    <script>
+        // waypoint
+        $('[data-waypoint]').ready(function () {
+            var conceptEls = document.querySelectorAll('.concept');
+            var waypoints = document.querySelectorAll('[data-waypoint]');
+            var sidebar = document.querySelector('.sidebar-menu .card-body');
+            
+            conceptEls.forEach((concept)=>{
+                var newLi = document.createElement('li');
+                newLi.appendChild(document.createTextNode(concept.innerText));
+                sidebar.appendChild(newLi);
             })
-    
-            $(".glossary-card-container").mouseout(function(){
-                this.style.zIndex = "1";
+
+
+            if (waypoints) {    
+                waypoints.forEach(function (waypoint) {
+                    var wpNumber = Number(waypoint.dataset.wpnum);
+                    var wpText = waypoint.innerText;
+                    new Waypoint({
+                        element: document.querySelector(`[data-waypoint="${waypoint.dataset.waypoint}"]`),
+                        handler: function (direction) {
+                            if(wpNumber === 0 && direction === "down"){
+                                document.querySelector('.sidebar-menu').style.display = "flex";
+                            }else if(wpNumber === 0 && direction === "up"){
+                                document.querySelector('.sidebar-menu').style.display = "none";
+                            }
+                            
+                            var cNodes = sidebar.childNodes;
+                            cNodes.forEach((node)=>{
+                                if(node.nodeName !== "#text"){
+                                    node.style.cssText = "color:#373d3f; font-weight:normal;";
+                                }
+                            })
+                            if(direction === "down"){
+                                var cHeading = sidebar.querySelector(`:nth-child(${wpNumber+1})`);
+                                cHeading.style.cssText = "color:#0786a0; font-weight:bold;";
+                            }else if(wpNumber !== 0){
+                                var cHeading = sidebar.querySelector(`:nth-child(${wpNumber})`);
+                                cHeading.style.cssText = "color:#0786a0; font-weight:bold;";
+                            }                         
+                        }
+                    })
+                })
+            }
+
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                Waypoint.refreshAll();
             })
         })
-        </script>
+
+        
+    </script>
 </body>
 
 </html>
