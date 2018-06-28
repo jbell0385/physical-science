@@ -35,6 +35,10 @@
             top:5px;
             right:5px;
         }
+
+        .ht-highlight{
+            background-color: #e7ebc3!important;
+        }
     </style>
 
 </head>
@@ -72,7 +76,7 @@
             </div>
             <div class="card-body">
                 <div class="col">
-                    <p>I can properly measure and collect data using the proper measurements and tools.
+                    <p class="hot-text">I can properly measure and collect data using the proper measurements and tools.
                     </p>
                     <ol>
                         <li>
@@ -1012,7 +1016,7 @@
                             </div>
                             <hr style="width:50%">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-xl-5">
                                     <p>Steps to using a Triple Beam Balance:
                                     </p>
                                     <ol>
@@ -1033,7 +1037,7 @@
 
                                     </ol>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-xl-7">
                                     <div class="embed-responsive embed-responsive-4by3" style="max-width:580px;">
                                         <iframe class="embed-responsive-item" src="https://boiling-tor-85799.herokuapp.com/"></iframe>
                                     </div>
@@ -1699,15 +1703,52 @@
                 </div>
             </div>
         </div>
-        <!--====  End of Concept # Block Snippet  ====-->
+        
 
-        <div class="card sidebar-menu" style="display:none;">
-            <div class="card-body">
+        <!--Toolkit-->
+        <div id="btn-tools" class="row bg-primary">
+            <a class="bs-btn bs-btn-primary" title="Graphing Calculator" data-placement="top" data-target="#desmos-graphing-calculator" data-toggle="modal"> <i class="fa fa-chart-line" style="font-size: 25px;" aria-hidden="true"> </i> </a>
+            <a class="bs-btn bs-btn-primary" title="Scientific Calculator" data-placement="top" data-target="#desmos-scientific-calculator" data-toggle="modal"> <i class="fa fa-calculator" style="font-size: 25px;" aria-hidden="true"> </i> </a>
+            <a class="bs-btn bs-btn-primary ht-btn" title="Hot Text"> <i class="fas fa-heading" style="font-size: 25px;"></i> </a>
+        </div>
+        <div id="desmos-graphing-calculator" class="modal fade" role="dialog" aria-labelledby="desmos graphing calculator" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div id="" class="modal-content ems-modal-content">
+                    <div class="modal-header">
+                        <h5 id="desmos-graphing-calculator-head" class="modal-title">Desmos Graphing Calculator</h5>
+                        <a class="close" aria-label="Close" data-dismiss="modal"> <span aria-hidden="true"> &times; </span> </a>
+                    </div>
+                    <div class="modal-body embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://storage.googleapis.com/emspmg/Mathematics/Tools/desmos.html" width="300" height="150"></iframe>
+                    </div>
+                    <div class="modal-footer"><a class="bs-btn bs-btn-primary" data-dismiss="modal"> Close </a></div>
+                </div>
+            </div>
+        </div>
+        <div id="desmos-scientific-calculator" class="modal fade" role="dialog" aria-labelledby="desmos scientific calculator" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div id="" class="modal-content ems-modal-content">
+                    <div class="modal-header">
+                        <h5 id="desmos-scientific-calculator-head" class="modal-title">Desmos Scientific Calculator</h5>
+                        <a class="close" aria-label="Close" data-dismiss="modal"> <span aria-hidden="true"> &times; </span> </a>
+                    </div>
+                    <div class="modal-body embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.desmos.com/scientific" width="300" height="150"></iframe>
+                    </div>
+                    <div class="modal-footer"><a class="bs-btn bs-btn-primary" data-dismiss="modal"> Close </a></div>
+                </div>
             </div>
         </div>
 
-        
+        <!-- End Tool Kit-->
 
+    </div>
+
+    
+    <!-- SIdebar menu -->
+    <div class="card sidebar-menu">
+        <div class="card-body">
+        </div>
     </div>
     <!--====  End of Start of Template  ====-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -1768,6 +1809,50 @@
                 Waypoint.refreshAll();
             })
         })
+
+        $('.hot-text').ready(function(){
+            const pElements = document.querySelectorAll('p');
+            const liElements = document.querySelectorAll('li');
+            const allElements = [...pElements,...liElements];
+
+            const htBtn = document.querySelector('.ht-btn');
+            let htSwitch = false;
+            htBtn.addEventListener('click', activateHt);
+            
+            function activateHt(){
+                
+                htSwitch = !htSwitch;
+                console.log(htSwitch);
+                if(htSwitch){
+                    console.log(allElements)
+                    allElements.forEach((el)=>{
+                        const text = el.innerHTML;
+                        //A regex to try and select each sentence in the paragraph and wrap it in a span element. The span element allows a listener to be added to the sentence inside the paragraph.
+                        const newText = text.replace(/([\w\d\s\,\(\)\{\}\:\<\=\"\-\>\/\@\#\%\^\&\*\_\+\\\|\'\[\]\;])+([\!\?\.][^\s]+)?([\w\d\s\,\(\)\{\}\:\<\=\"\-\>\/\@\#\%\^\&\*\_\+\\\|\'\[\]\;])*/g, `<span class="ht-sentence">$&</span>`);
+                        //Replace the old paragraph with the new paragraph with the span classes
+                        el.innerHTML = newText;
+                    })
+                    
+                    //Grab all those spans with the class .ht-sentence, which will allow mouseover listener added
+                    const highlights = document.querySelectorAll('.ht-sentence');
+                    highlights.forEach((el)=>{
+                        el.addEventListener('mouseover',addHighlight);
+                        el.addEventListener('mouseout',removeHighlight);
+                    })
+        
+                    function addHighlight(){
+                        if(htSwitch){
+                            this.classList.add('ht-highlight');
+                        }
+                    }
+        
+                    function removeHighlight(){
+                        this.classList.remove('ht-highlight');
+                    }
+                }
+            }
+            
+        }) 
 
         
     </script>
