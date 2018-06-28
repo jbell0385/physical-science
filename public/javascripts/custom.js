@@ -37,7 +37,6 @@ var equip = [
     {name:'file', title:"File", xl:570, xr:757, yt:474, yb:503},
     {name:'test-tube-rack', title:"Test Tube Rack", xl:728, xr:895, yt:539, yb:647},
     {name:'wire-brush', title:"Wire Brush", xl:553, xr:748, yt:352, yb:376}
-
 ]
 
 function preload(){
